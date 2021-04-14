@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Description>A simple string queryable system inspired by Honeybadger's search.</Description>
+    <PackageTags>search, filter, query, tags</PackageTags>
+    <PackageId>Mallos.Searchable</PackageId>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+</Project>
