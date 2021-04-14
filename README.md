@@ -1,4 +1,6 @@
 # Mallos.Searchable
+[![NuGet Badge](https://buildstats.info/nuget/Mallos.Searchable/)](https://www.nuget.org/packages/Mallos.Searchable/)
+
 A simple string queryable system inspired by Honeybadger's search.
 
 ## Contributing
