@@ -170,18 +170,15 @@ namespace Mallos.Searchable
                     }
                 }
 
-                return new Token(TokenType.String, result[0..^1], row, col);
+                return new Token(TokenType.String, result.Substring(0, result.Length - 1), row, col);
             }
             else
             {
                 sb.Clear();
 
-                char lastChar = 'a';
                 while (!singleCharTokens.ContainsKey(currentChar))
                 {
                     sb.Append(currentChar);
-
-                    lastChar = currentChar;
                     NextChar();
                 }
 

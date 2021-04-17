@@ -4,14 +4,8 @@ namespace Mallos.Searchable.Test
 
     public class SearchableAnalyzeTest
     {
-        readonly TestObjectSearchable searchable = new TestObjectSearchable();
-        readonly TestObject[] testdata = new TestObject[]
-        {
-            new ("1"),
-            new ("2"),
-            new ("3")
-        };
-
+        readonly TestObjectSearchable searchable = new();
+        
         [Fact]
         public void Analyze_IsFilter_ValueMatch()
         {
