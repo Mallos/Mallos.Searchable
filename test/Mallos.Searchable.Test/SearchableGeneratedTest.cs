@@ -3,9 +3,9 @@ namespace Mallos.Searchable.Test
     using System.Linq;
     using Xunit;
 
-    public class SearchableTest
+    public class SearchableGeneratedTest
     {
-        readonly TestObjectSearchable searchable = new();
+        readonly MyGeneratedSearchable searchable = new();
 
         [Fact]
         public void Search_IsFilter_FoundMatch()

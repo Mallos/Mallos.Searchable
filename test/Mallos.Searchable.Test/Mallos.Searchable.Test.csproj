@@ -20,7 +20,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\src\Mallos.Searchable.CodeAnalyzer\Mallos.Searchable.CodeAnalyzer.csproj" />
     <ProjectReference Include="..\..\src\Mallos.Searchable\Mallos.Searchable.csproj" />
+    <ProjectReference Include="..\Mallos.Searchable.TestData\Mallos.Searchable.TestData.csproj" />
   </ItemGroup>
 
 </Project>

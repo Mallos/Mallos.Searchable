@@ -3,17 +3,7 @@ namespace Mallos.Searchable.Test
     using System.Collections.Generic;
     using System.Linq;
 
-    class TestObject
-    {
-        public TestObject(string value)
-        {
-            this.Value = value;
-        }
-
-        public string Value { get; set; }
-    }
-
-    class IsOne : IFilter<TestObject>
+    public class IsOne : IFilter<TestObject>
     {
         public string Key => "one";
 
@@ -24,7 +14,7 @@ namespace Mallos.Searchable.Test
             => query.Where(x => x.Value != "1");
     }
 
-    class Value : IFilter<TestObject>
+    public class Value : IFilter<TestObject>
     {
         public string Key => "value";
 
@@ -35,7 +25,7 @@ namespace Mallos.Searchable.Test
             => query.Where(x => !x.Value.Contains(value));
     }
 
-    class TestObjectSearchable : Searchable<TestObject>
+    public class TestObjectSearchable : Searchable<TestObject>
     {
         public TestObjectSearchable()
         {

@@ -9,13 +9,18 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mallos.Searchable", "src\Ma
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{D375808D-C9F7-4748-9253-BF93762A3E74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mallos.Searchable.Test", "test\Mallos.Searchable.Test\Mallos.Searchable.Test.csproj", "{54CF0052-174A-43EE-9B57-6B940BC7DB59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mallos.Searchable.Test", "test\Mallos.Searchable.Test\Mallos.Searchable.Test.csproj", "{54CF0052-174A-43EE-9B57-6B940BC7DB59}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8406D9E0-8BD7-47CD-955E-3DD53500F70B}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 		README.md = README.md
+		source-generator-issues.md = source-generator-issues.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mallos.Searchable.CodeAnalyzer", "src\Mallos.Searchable.CodeAnalyzer\Mallos.Searchable.CodeAnalyzer.csproj", "{D2510BCB-B1F5-4409-86AD-54CD7CBE1C7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mallos.Searchable.TestData", "test\Mallos.Searchable.TestData\Mallos.Searchable.TestData.csproj", "{81C8953E-24EA-4C91-BD34-29DB60F9CF1C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +36,14 @@ Global
 		{54CF0052-174A-43EE-9B57-6B940BC7DB59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54CF0052-174A-43EE-9B57-6B940BC7DB59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54CF0052-174A-43EE-9B57-6B940BC7DB59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2510BCB-B1F5-4409-86AD-54CD7CBE1C7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2510BCB-B1F5-4409-86AD-54CD7CBE1C7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2510BCB-B1F5-4409-86AD-54CD7CBE1C7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2510BCB-B1F5-4409-86AD-54CD7CBE1C7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81C8953E-24EA-4C91-BD34-29DB60F9CF1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81C8953E-24EA-4C91-BD34-29DB60F9CF1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81C8953E-24EA-4C91-BD34-29DB60F9CF1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81C8953E-24EA-4C91-BD34-29DB60F9CF1C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +51,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{16741BDE-60CD-48BA-9ADE-992B6906E5DB} = {E85FD8AD-8255-4D2C-99BD-2750358B7074}
 		{54CF0052-174A-43EE-9B57-6B940BC7DB59} = {D375808D-C9F7-4748-9253-BF93762A3E74}
+		{D2510BCB-B1F5-4409-86AD-54CD7CBE1C7B} = {E85FD8AD-8255-4D2C-99BD-2750358B7074}
+		{81C8953E-24EA-4C91-BD34-29DB60F9CF1C} = {D375808D-C9F7-4748-9253-BF93762A3E74}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C40FF5E9-F426-4AC5-B158-22E7487733C4}
