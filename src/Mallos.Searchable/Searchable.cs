@@ -98,33 +98,10 @@ namespace Mallos.Searchable
                         lexer.NextToken(2);
                         var valueToken = lexer.CurrentToken;
 
-                        var endLocation = new ExpressionLocation(
-                            lexer.CurrentToken.Row,
-                            lexer.CurrentToken.Col + lexer.CurrentToken.Value.Length
-                        );
+                        var keyLocationRange = keyToken.GetLocation();
+                        var valueLocationRange = valueToken.GetLocation();
 
-                        var keyLocationRange = new ExpressionLocationRange(
-                            new ExpressionLocation(
-                                keyToken.Row,
-                                keyToken.Col
-                            ),
-                            new ExpressionLocation(
-                                keyToken.Row,
-                                keyToken.Col + keyToken.Value.Length
-                            )
-                        );
-
-                        var valueLocationRange = new ExpressionLocationRange(
-                            new ExpressionLocation(
-                                valueToken.Row,
-                                valueToken.Col
-                            ),
-                            new ExpressionLocation(
-                                valueToken.Row,
-                                valueToken.Col + valueToken.Value.Length
-                            )
-                        );
-
+                        var endLocation = lexer.CurrentToken.GetEndLocation();
                         var locationRange = new ExpressionLocationRange(startLocation, endLocation);
 
                         var expression = new Expression(
@@ -140,11 +117,7 @@ namespace Mallos.Searchable
                     }
                     else
                     {
-                        var endLocation = new ExpressionLocation(
-                            lexer.CurrentToken.Row,
-                            lexer.CurrentToken.Col + lexer.CurrentToken.Value.Length
-                        );
-
+                        var endLocation = lexer.CurrentToken.GetEndLocation();
                         var locationRange = new ExpressionLocationRange(startLocation, endLocation);
 
                         var expression = new Expression(

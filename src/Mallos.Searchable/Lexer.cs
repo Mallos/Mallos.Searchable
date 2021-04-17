@@ -34,6 +34,15 @@ namespace Mallos.Searchable
             this.Col = col;
         }
 
+        public ExpressionLocation GetStartLocation()
+            => new ExpressionLocation(this.Row, this.Col);
+
+        public ExpressionLocation GetEndLocation()
+            => new ExpressionLocation(this.Row, this.Col + this.Value.Length);
+
+        public ExpressionLocationRange GetLocation()
+            => new ExpressionLocationRange(this.GetStartLocation(), this.GetEndLocation());
+
         public override string ToString() => $"('{Type}', '{Value}')";
     }
 
